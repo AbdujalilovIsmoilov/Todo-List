@@ -10,14 +10,14 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- ****INDEX CSS**** -->
-  <link rel="stylesheet" href="./css/index.css">
-  <title>Todo-List</title>
+  <link rel="stylesheet" href="../css/registr.css">
+  <title>Register</title>
 </head>
 
 <body>
   <div class="container">
     <form class="form" id="form" action="#">
-      <h2 class="form__title">Todo-List</h2>
+      <h2 class="form__title">Email</h2>
       <label for="username" class="form-label">
         UserName
         <input placeholder="UserName" maxlength="18" class="form-label__input username" id="username" type="text">
@@ -26,36 +26,20 @@
         lastName
         <input placeholder="lastName" maxlength="18" class="form-label__input lastname" id="lastname" type="text">
       </label>
-      <label for="age" class="form-label">
+      <label for="email" class="form-label">
         Age
-        <input placeholder="Age" maxlength="4" class="form-label__input age" id="age" type="text">
+        <input placeholder="Email" class="form-label__input email" id="email" type="email">
       </label>
-      <button class="form-label__submit" id="submit" type="submit">Add To Task</button>
+      <label for="email" class="form-label">
+        Password
+        <input placeholder="Password" maxlength="18" class="form-label__input password" id="password" type="password">
+      </label>
+      <button class="form-label__submit" id="submit" type="submit">Add To Register</button>
     </form>
   </div>
 
-  <div class="container">
-    <ul class="list">
-      <li class="list-item">
-        <div class="list-item-box">
-          <h2 class="list-item-box__title">John...</h2>
-        </div>
-        <div class="list-item-box">
-          <h2 class="list-item-box__title">Doe...</h2>
-        </div>
-        <div class="list-item-box">
-          <h2 class="list-item-box__title">28</h2>
-        </div>
-        <div class="list-item-box">
-          <i class="fa-solid fa-pen"></i>
-          <i class="fa-solid fa-trash"></i>
-        </div>
-      </li>
-    </ul>
-  </div>
-
   <!-- ****JAVA SCRIPT LINK**** -->
-  <script src="./js/index.js"></script>
+  <script src="../js/registration.js"></script>
 </body>
 
 </html>

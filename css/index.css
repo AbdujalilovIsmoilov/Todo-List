@@ -31,7 +31,7 @@
 .form-label {
   width: 50%;
   font-family: sans-serif;
-  text-transform: lowercase;
+  text-transform: capitalize;
   letter-spacing: 0.2px;
   margin: 0 0 0 5px;
   font-size: 16px;
@@ -157,7 +157,7 @@
   .form-label {
     width: 95%;
   }
-  .list{
+  .list {
     width: 95%;
   }
 }
