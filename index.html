@@ -16,21 +16,12 @@
 
 <body>
   <div class="container">
+    <h2 class="title">Todo-List</h2>
     <form class="form" id="form" action="#">
-      <h2 class="form__title">Todo-List</h2>
-      <label for="username" class="form-label">
-        UserName
-        <input placeholder="UserName" maxlength="18" class="form-label__input username" id="username" type="text">
-      </label>
-      <label for="lastname" class="form-label">
-        lastName
-        <input placeholder="lastName" maxlength="18" class="form-label__input lastname" id="lastname" type="text">
-      </label>
-      <label for="age" class="form-label">
-        Age
-        <input placeholder="Age" maxlength="4" class="form-label__input age" id="age" type="text">
-      </label>
-      <button class="form-label__submit" id="submit" type="submit">Add To Task</button>
+      <input class="form__input username" id="username" type="text">
+      <button class="form__submit" id="submit" type="submit" data-btn="btn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
     </form>
   </div>
 
@@ -38,13 +29,61 @@
     <ul class="list">
       <li class="list-item">
         <div class="list-item-box">
-          <h2 class="list-item-box__title">John...</h2>
+          <h2 class="list-item-box__title">html</h2>
         </div>
         <div class="list-item-box">
-          <h2 class="list-item-box__title">Doe...</h2>
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item-box">
+          <h2 class="list-item-box__title">css</h2>
         </div>
         <div class="list-item-box">
-          <h2 class="list-item-box__title">28</h2>
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item-box">
+          <h2 class="list-item-box__title">sass</h2>
+        </div>
+        <div class="list-item-box">
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item-box">
+          <h2 class="list-item-box__title">bootstrap</h2>
+        </div>
+        <div class="list-item-box">
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item-box">
+          <h2 class="list-item-box__title">javascript</h2>
+        </div>
+        <div class="list-item-box">
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item-box">
+          <h2 class="list-item-box__title">typescript</h2>
+        </div>
+        <div class="list-item-box">
+          <i class="fa-solid fa-pen"></i>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="list-item-box">
+          <h2 class="list-item-box__title">react</h2>
         </div>
         <div class="list-item-box">
           <i class="fa-solid fa-pen"></i>
