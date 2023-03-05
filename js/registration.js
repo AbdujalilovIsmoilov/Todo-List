@@ -31,9 +31,7 @@ function fullQueries() {
   }
 }
 
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  fullQueries.bind(todoList).call();
+function fullAnswer() {
   if (
     todoList.username.value.trim() != "" ||
     todoList.lastname.value.trim() != "" ||
@@ -44,4 +42,10 @@ form.addEventListener("submit", e => {
   } else {
     alert("Error Request");
   }
+}
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  fullQueries.bind(todoList).call();
+  fullAnswer.bind(todoList).call();
 });
