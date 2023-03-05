@@ -29,23 +29,20 @@ function fullQueries() {
     };
     localStorage.setItem("queries", JSON.stringify(objectQueries));
   }
+  console.log(this);
 }
 
-function fullAnswer() {
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  fullQueries.bind(todoList).call();
   if (
-    todoList.username.value.trim() != "" ||
-    todoList.lastname.value.trim() != "" ||
-    todoList.email.value.trim() != "" ||
+    todoList.username.value.trim() != "" &&
+    todoList.lastname.value.trim() != "" &&
+    todoList.email.value.trim() != "" &&
     todoList.password.value.trim() != ""
   ) {
     window.location.href = "login.html";
   } else {
     alert("Error Request");
   }
-}
-
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  fullQueries.bind(todoList).call();
-  fullAnswer.bind(todoList).call();
 });
